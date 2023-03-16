@@ -2,6 +2,12 @@ import '@/styles/globals.css'
 import * as ethers from 'ethers'
 import { DAppProvider, Polygon, useEthers } from '@usedapp/core'
 import Link from 'next/link'
+import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client'
+
+const apolloClient = new ApolloClient({
+  uri: 'https://thegraph.azuro.org/subgraphs/name/azuro-protocol/azuro-api-polygon',
+  cache: new InMemoryCache(),
+})
 
 const config = {
   readOnlyChainId: Polygon.chainId,
@@ -41,9 +47,11 @@ const PageLayout = ({ children }) => (
 export default function App({ Component, pageProps }) {
   return (
     <DAppProvider config={config}>
-      <PageLayout>
-        <Component {...pageProps} />
-      </PageLayout>
+      <ApolloProvider client={apolloClient}>
+        <PageLayout>
+          <Component {...pageProps} />
+        </PageLayout>
+      </ApolloProvider>
     </DAppProvider>
   )
 }

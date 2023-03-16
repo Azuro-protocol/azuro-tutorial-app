@@ -10,6 +10,7 @@
     "get-dicts": "dictionaries -o ./dictionaries -v latest -t js"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.10",
     "@azuro-org/dictionaries": "^1.0.6",
     "@azuro-org/toolkit": "^0.1.4",
     "@usedapp/core": "^1.2.7",
