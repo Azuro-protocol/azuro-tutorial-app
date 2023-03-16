@@ -12,7 +12,9 @@
   "dependencies": {
     "@azuro-org/dictionaries": "^1.0.6",
     "@azuro-org/toolkit": "^0.1.4",
+    "@usedapp/core": "^1.2.7",
     "dayjs": "^1.11.7",
+    "ethers": "^5.7.2",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0"
