@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   "1": "1",
   "2": "X",
   "3": "2",

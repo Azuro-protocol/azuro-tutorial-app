@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   "1": "Goal",
   "2": "Corners",
   "3": "Double",

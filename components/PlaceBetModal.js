@@ -28,7 +28,7 @@ const GameInfo = ({ game }) => (
 )
 
 const OutcomeInfo = ({ outcome }) => {
-  const marketName = getMarketName(outcome.outcomeId, dictionaries)
+  const marketName = getMarketName({ outcomeId: outcome.outcomeId, dictionaries })
 
   return (
     <div className="grid grid-cols-[auto_1fr] gap-y-3 mt-2 text-md">

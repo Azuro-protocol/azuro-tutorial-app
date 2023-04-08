@@ -10,7 +10,7 @@ import selections from './selections'
 import marketNames from './marketNames'
 import marketDescriptions from './marketDescriptions'
 
-export default {
+module.exports = {
   outcomes,
   sports,
   markets,

@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   "1": "0",
   "2": "-0.25",
   "3": "-0.5",

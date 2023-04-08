@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   "1": "Table Tennis",
   "2": "Netball",
   "3": "Horse Racing AntePost",

@@ -1,6 +1,6 @@
 import { useEthers } from '@usedapp/core'
 import dayjs from 'dayjs'
-import { getMarketName, assembleSelectionName } from '@azuro-org/dictionaries'
+import { getMarketName, getSelectionName } from '@azuro-org/dictionaries'
 import dictionaries from '@/dictionaries'
 import useBetsHistory from '@/hooks/useBetsHistory'
 
@@ -11,8 +11,8 @@ const BetInfo = ({ data }) => {
   const isResolved = status === 'Resolved'
   const isCanceled = status === 'Canceled'
 
-  const marketName = getMarketName(outcome.outcomeId, dictionaries)
-  const selectionName = assembleSelectionName(outcome.outcomeId, dictionaries)
+  const marketName = getMarketName({ outcomeId: outcome.outcomeId, dictionaries })
+  const selectionName = getSelectionName({ outcomeId: outcome.outcomeId, dictionaries })
 
   return (
     <div className="w-full py-4 px-6">

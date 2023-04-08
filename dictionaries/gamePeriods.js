@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   "1": "Whole game",
   "2": "1st time",
   "3": "2nd time",

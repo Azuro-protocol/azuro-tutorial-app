@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   "1": "Main game",
   "2": "Extra-end",
   "4": "extra innings",

@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   "1": "Full time result",
   "2": "Double chance",
   "3": "Handicap",

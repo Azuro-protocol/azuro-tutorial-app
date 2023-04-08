@@ -3,16 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "postinstall": "npm run get-dictionaries",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "get-dicts": "dictionaries -o ./dictionaries -v latest -t js"
+    "get-dictionaries": "get-dictionaries -o ./dictionaries -v latest -t js"
   },
   "dependencies": {
     "@apollo/client": "^3.7.10",
-    "@azuro-org/dictionaries": "^1.0.6",
-    "@azuro-org/toolkit": "^0.1.4",
+    "@azuro-org/dictionaries": "^2.0.2",
+    "@azuro-org/toolkit": "^2.0.0",
     "@usedapp/core": "^1.2.7",
     "dayjs": "^1.11.7",
     "ethers": "^5.7.2",
