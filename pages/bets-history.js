@@ -34,14 +34,14 @@ const BetInfo = ({ data }) => {
         </div>
         <div>
           <div className="text-gray-400">Bet Amount</div>
-          <div className="mt-1 font-semibold">{+parseFloat(amount).toFixed(2)} USDC</div>
+          <div className="mt-1 font-semibold">{+parseFloat(amount).toFixed(2)} USDT</div>
         </div>
       </div>
       <div className="grid grid-cols-4 mt-4 mt-3 pt-3 text-md border-t border-gray-200">
         <div>
           <div className="text-gray-400">Possible Win</div>
           <div className="mt-1 font-semibold">
-            {+parseFloat(potentialPayout).toFixed(2)} USDC
+            {+parseFloat(potentialPayout).toFixed(2)} USDT
           </div>
         </div>
         <div>
